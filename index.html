@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add Courses to Shopping Cart</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <img src="img/Logo.svg" id="logo" />
+          </div>
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="img/cart.png" id="img-cart" />
+                <p id="courses-number">No courses</p>
+                <div id="shopping-cart">
+                  <table id="cart-content" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="clear-cart" class="button u-full-width"
+                    >Clear Cart</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <div class="hero-content">
+              <h2>Learn Something Today</h2>
+              <p>Special Offer, any course $15</p>
+              <form action="#" id="search" method="post" class="form">
+                <input
+                  class="u-full-width"
+                  type="text"
+                  placeholder="What Do You Want To Learn? "
+                  id="search-course"
+                />
+                <input
+                  type="submit"
+                  id="submit-search-course"
+                  class="submit-search-course"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-bar">
+      <div class="container">
+        <div class="row">
+          <div class="four columns icon icon1">
+            <p>
+              200 online courses <br />
+              Learn new skills
+            </p>
+          </div>
+          <div class="four columns icon icon2">
+            <p>
+              Expert Instructors<br />
+              Learn with different teach styles
+            </p>
+          </div>
+          <div class="four columns icon icon3">
+            <p>
+              Lifetime access <br />
+              learn at your own pace
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="courses-menu" class="container">
+      <ul class="py-30">
+        <li>
+          <a href="#" class="button" data-target="courses">All</a>
+        </li>
+        <li>
+          <a href="#" class="button" data-target="cad-cam">Cad-Cam</a>
+        </li>
+        <li>
+          <a href="#" class="button" data-target="design">Design</a>
+        </li>
+        <li>
+          <a href="#" class="button" data-target="marketing">Marketing</a>
+        </li>
+        <li>
+          <a href="#" class="button" data-target="ms-office">MS Office</a>
+        </li>
+        <li>
+          <a href="#" class="button" data-target="programing">Programing</a>
+        </li>
+        <li>
+          <a href="#" class="button" data-target="wordpress">Wordpress</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="courses-list" class="container">
+      <h1 id="heading" class="heading">Online Courses</h1>
+      <div class="row">
+        <div class="four columns courses cad-cam">
+          <div class="card">
+            <img
+              src="img/CAD-CAM-Programiranje/ArchiCAD.png"
+              class="course-image u-full-width"
+              alt="ArchiCAD"
+            />
+            <div class="info-card">
+              <h4>ArchiCAD</h4>
+              <p>Vanja Đurđević</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="1"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses cad-cam">
+          <div class="card">
+            <img
+              src="img/CAD-CAM-Programiranje/AutoCAD.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>AutoCAD</h4>
+              <p>Vanja Đurđević</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="2"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="four columns courses cad-cam">
+          <div class="card">
+            <img
+              src="img/CAD-CAM-Programiranje/Kurs_3D_modelovanja.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Autodesk 3d Studio Max</h4>
+              <p>Biljana Škrbo</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="3"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns courses design">
+          <div class="card">
+            <img
+              src="img/Dizajn/Adobe_Illustrator.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Adobe Illustrator</h4>
+              <p>Biljana Škrbo</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="4"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses design">
+          <div class="card">
+            <img
+              src="img/Dizajn/Adobe_Photoshop.png"
+              class="course-image u-full-width"
+              alt="Adobe Photoshop"
+            />
+            <div class="info-card">
+              <h4>Adobe Photoshop</h4>
+              <p>Biljana Škrbo</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="5"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses design">
+          <div class="card">
+            <img src="img/Dizajn/Corel.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Corel</h4>
+              <p>Biljana Škrbo</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="6"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns courses design">
+          <div class="card">
+            <img
+              src="img/Dizajn/Indesign.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Indesign</h4>
+              <p>Biljana Škrbo</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="7"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses design">
+          <div class="card">
+            <img src="img/Dizajn/ui-ux.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>UI / UX design</h4>
+              <p>Mihajlo Šobat</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="8"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses marketing">
+          <div class="card">
+            <img
+              src="img/Marketing/marketing-icon.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Marketing</h4>
+              <p>Brankica Raković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="9"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns courses design">
+          <div class="card">
+            <img
+              src="img/Web_dizajn/Kurs_Web_design_za_pocetnike.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Web design beginner course</h4>
+              <p>Saša Trkulja</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="10"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses design">
+          <div class="card">
+            <img
+              src="img/Web_dizajn/Kurs_web_design.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Web design intermediate course</h4>
+              <p>Saša Trkulja</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="11"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses design">
+          <div class="card">
+            <img
+              src="img/Web_dizajn/Kurs_Web_design-HTML_CSS_Bootstrap.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Web design profesional course</h4>
+              <p>Saša Trkulja</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="12"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns courses ms-office">
+          <div class="card">
+            <img
+              src="img/MS_office/Access.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>MS Access</h4>
+              <p>Zoran Janković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="13"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses ms-office">
+          <div class="card">
+            <img
+              src="img/MS_office/Excel.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Excel</h4>
+              <p>Zoran Janković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="14"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses ms-office">
+          <div class="card">
+            <img
+              src="img/MS_office/Kurs_poznavanja_rada_na_racunaru.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>MS office beginner</h4>
+              <p>Juan Pedro</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="15"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns courses programing">
+          <div class="card">
+            <img
+              src="img/Programiranje/javascript.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>JavaScript beginner</h4>
+              <p>Saša Trkulja</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="16"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses programing">
+          <div class="card">
+            <img
+              src="img/Programiranje/PHP_programiranje.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>PHP beginner</h4>
+              <p>Zoran Janković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="17"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses programing">
+          <div class="card">
+            <img
+              src="img/Programiranje/Kurs_Java_programiranja.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Java beginner</h4>
+              <p>Zoran Janković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="18"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns courses programing">
+          <div class="card">
+            <img
+              src="img/Programiranje/Kurs_Android_Studio_programiranja.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Android studio</h4>
+              <p>Zoran Janković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="19"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses wordpress">
+          <div class="card">
+            <img
+              src="img/Wordpress/WordPress_za_pocetnike.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Wordpress beginner</h4>
+              <p>Zoran Janković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="20"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns courses wordpress">
+          <div class="card">
+            <img
+              src="img/Wordpress/Wordpress_napredni.png"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Wordpress advanced</h4>
+              <p>Zoran Janković</p>
+              <img src="img/stars.png" />
+              <p class="price">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="21"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <nav id="primary" class="menu">
+              <a class="link" href="#">For Business</a>
+              <a class="link" href="#">Become an Instructor</a>
+              <a class="link" href="#">Mobile Applications</a>
+              <a class="link" href="#">Support</a>
+              <a class="link" href="#">Help</a>
+            </nav>
+          </div>
+          <div class="four columns">
+            <nav id="secondary" class="menu">
+              <a class="link" href="#">About Us</a>
+              <a class="link" href="#">Work with us</a>
+              <a class="link" href="#">Blog</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
